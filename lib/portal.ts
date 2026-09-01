@@ -6,17 +6,17 @@ export const PORTAL_TENANT_ID = 'tenant_azwebcorp';
 
 export const PORTAL_SITES = [
   {
-    id: 'everything-it',
-    name: 'Everything IT',
-    domain: 'everythingit.ie',
-    canonicalUrl: 'https://everythingit.ie',
+    id: 'northstar-msp',
+    name: 'Northstar Managed IT',
+    domain: 'northstarmsp.example',
+    canonicalUrl: 'https://northstarmsp.example',
     timezone: 'Europe/Dublin',
   },
   {
-    id: 'palo-verde',
-    name: 'Palo Verde Cancer Specialists',
-    domain: 'pvhomed.com',
-    canonicalUrl: 'https://pvhomed.com',
+    id: 'meridian-health',
+    name: 'Meridian Health Partners',
+    domain: 'meridianhealth.example',
+    canonicalUrl: 'https://meridianhealth.example',
     timezone: 'America/Phoenix',
   },
   {
@@ -40,7 +40,7 @@ export function getPortalSite(siteId: string) {
 
 export function getPortalAccess(user: Pick<ChatGPTUser, 'email'>) {
   const email = user.email.trim().toLowerCase();
-  const adminEmails = (env.PORTAL_ADMIN_EMAILS ?? 'yasirmemon1976@gmail.com')
+  const adminEmails = (env.PORTAL_ADMIN_EMAILS ?? '')
     .split(',')
     .map((item) => item.trim().toLowerCase())
     .filter(Boolean);

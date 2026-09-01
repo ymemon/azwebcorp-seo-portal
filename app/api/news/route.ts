@@ -8,13 +8,13 @@ import {
 export const dynamic = 'force-dynamic';
 
 const newsProfiles = {
-  'everything-it': {
+  'northstar-msp': {
     query:
       '("managed service provider" OR MSP OR cybersecurity OR "Microsoft 365") (Ireland OR Europe OR global) when:7d',
     label: 'MSP, cybersecurity and Microsoft ecosystem',
     locale: { hl: 'en-IE', gl: 'IE', ceid: 'IE:en' },
   },
-  'palo-verde': {
+  'meridian-health': {
     query:
       '(oncology OR "cancer treatment" OR "cancer research" OR FDA) (Arizona OR global) when:7d',
     label: 'oncology, treatment and research',

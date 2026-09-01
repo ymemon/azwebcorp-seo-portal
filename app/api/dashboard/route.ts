@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const user = await getChatGPTUser();
   if (!user) return Response.json({ error: 'Unauthorized' }, { status: 401 });
   const url = new URL(request.url);
-  const siteId = url.searchParams.get('siteId') ?? 'everything-it';
+  const siteId = url.searchParams.get('siteId') ?? 'northstar-msp';
   const requestedRange = url.searchParams.get('range') ?? '28d';
   if (
     !isPortalSiteId(siteId) ||

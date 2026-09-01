@@ -222,10 +222,10 @@ const workspaceProfiles: Record<
   WorkspaceKey,
   { name: string; domain: string }
 > = {
-  'everything-it': { name: 'Everything IT', domain: 'everythingit.ie' },
-  'palo-verde': {
-    name: 'Palo Verde Cancer Specialists',
-    domain: 'pvhomed.com',
+  'northstar-msp': { name: 'Northstar Managed IT', domain: 'northstarmsp.example' },
+  'meridian-health': {
+    name: 'Meridian Health Partners',
+    domain: 'meridianhealth.example',
   },
   'az-web-corp': { name: 'AZ Web Corp', domain: 'azwebcorp.com' },
 };
@@ -2071,7 +2071,7 @@ export function SeoDashboard({
 }) {
   const [range, setRange] = useState<RangeKey>('28d');
   const [workspace, setWorkspace] = useState<WorkspaceKey>(
-    workspaceIds[0] ?? 'everything-it',
+    workspaceIds[0] ?? 'northstar-msp',
   );
   const [activeView, setActiveView] = useState<ViewKey>('live');
   const [data, setData] = useState<DashboardData | null>(null);

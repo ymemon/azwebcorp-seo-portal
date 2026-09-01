@@ -33,7 +33,7 @@ import {
   ChartTooltipContent,
 } from '@/components/ui/chart';
 
-export type WorkspaceKey = 'everything-it' | 'palo-verde' | 'az-web-corp';
+export type WorkspaceKey = 'northstar-msp' | 'meridian-health' | 'az-web-corp';
 
 type LiveData = {
   site: { id: WorkspaceKey; name: string; domain: string };
@@ -67,14 +67,12 @@ const partnershipProfiles: Record<
     imagePosition?: string;
   }
 > = {
-  'everything-it': {
-    headline: 'AZ Web Corp × Everything IT',
+  'northstar-msp': {
+    headline: 'AZ Web Corp × Northstar Managed IT',
     copy: 'A shared growth workspace for organic visibility, analytics and the next best action.',
-    image: '/everything-it-partnership.jpg',
-    imagePosition: 'center 42%',
   },
-  'palo-verde': {
-    headline: 'AZ Web Corp × Palo Verde Cancer Specialists',
+  'meridian-health': {
+    headline: 'AZ Web Corp × Meridian Health Partners',
     copy: 'Digital growth with a patient-first view of visibility, engagement and local demand.',
   },
   'az-web-corp': {
